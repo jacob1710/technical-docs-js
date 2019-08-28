@@ -2,15 +2,36 @@
 *{
     margin: 0;
 }
+nav{
+    padding: 20px 0px;
+}
 nav header{ 
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
     font-weight: bold;
     text-align: center;
+    padding:10px;
 }
-nav{
-    padding: 20px;
+.nav-links{
+    border: 0.1em;
+    border-color: rgb(77, 78, 83);
+    border-style: solid;
+    height: 200px;
+    overflow: scroll;
 }
+.nav-div{
+    border: 0.05em;
+    border-color: rgb(77, 78, 83);
+    border-style: solid;
+    padding: 10px;
+}
+.nav-div a{
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(77, 78, 83);
+}
+
 main header{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
@@ -21,7 +42,7 @@ main{
     padding: 20px;
 }
 section{
-    margin: 30px 10px;
+    margin: 20px 10px;
 }
 p, li{
     font-family: 'Roboto', sans-serif;
@@ -39,3 +60,36 @@ p, li{
     color: rgb(77, 78, 83);
 }
 
+
+@media screen and (min-width: 768px) {
+    main{
+        width: 70%;
+        margin: auto;
+        float: left;
+        margin-left: 25%;
+    }
+    nav{
+        width: 25%;
+        float: left;
+        position: fixed;   
+    }
+    nav header{
+        font-size: 1.8em;
+    }
+    .nav-bar-div{
+        height: 100vh;
+    }
+    .nav-links{
+        border: 0.1em;
+        border-color: rgb(77, 78, 83);
+        border-style: solid;
+        height: auto;        
+        overflow-y: scroll;
+    }
+    .nav-div{
+        border: 0.05em;
+        border-color: rgb(77, 78, 83);
+        border-style: solid;
+        padding: 10px;
+    }
+}
